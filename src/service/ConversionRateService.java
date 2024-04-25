@@ -1,6 +1,6 @@
 package service;
 
-import Exceptions.ApiKeyNotFoundException;
+import exceptions.ApiKeyNotFoundException;
 import com.google.gson.*;
 import dto.ConversionRateDto;
 

@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b8ce9a-f996-409b-867b-52a5874e2fc5" name="Changes" comment="Project Initialization">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/google_code_gson.xml" afterDir="false" />
+    <list default="true" id="46b8ce9a-f996-409b-867b-52a5874e2fc5" name="Changes" comment="Added currency converter implementation.">
       <change afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/ApiKeyNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/ConversionRateDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/SavedConversionDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/CurrencyConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/ConversionRateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/constants/CurrencyCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/constants/UiPrompts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-converter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-converter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +85,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713891222755</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added currency converter implementation.">
+      <option name="closed" value="true" />
+      <created>1714070618212</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714070618212</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,7 +101,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -113,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project Initialization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project Initialization" />
+    <MESSAGE value="Added currency converter implementation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added currency converter implementation." />
   </component>
 </project>

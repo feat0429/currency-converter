@@ -1,4 +1,4 @@
-package Exceptions;
+package exceptions;
 
 public class ApiKeyNotFoundException extends RuntimeException {
     private final String message;
