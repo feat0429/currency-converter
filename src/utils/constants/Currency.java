@@ -9,7 +9,7 @@ public enum Currency {
 
     public final String code;
 
-    private Currency(String code){
+    Currency(String code){
         this.code = code;
     }
 }
