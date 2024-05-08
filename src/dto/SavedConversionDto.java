@@ -1,11 +1,9 @@
 package dto;
 
-import utils.constants.CurrencyCode;
-
 public record SavedConversionDto(
     String conversionTime,
-    CurrencyCode baseCurrencyCode,
-    CurrencyCode targetCurrencyCode,
+    String baseCurrencyCode,
+    String targetCurrencyCode,
     double valueToConvert,
     double conversionResult
     ) {

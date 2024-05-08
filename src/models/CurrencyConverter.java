@@ -5,7 +5,7 @@ import com.google.gson.reflect.TypeToken;
 import dto.ConversionRateDto;
 import dto.SavedConversionDto;
 import service.ConversionRateService;
-import utils.constants.CurrencyCode;
+import utils.constants.Currency;
 
 import java.io.*;
 import java.lang.reflect.Type;
@@ -22,14 +22,14 @@ public class CurrencyConverter {
         this.conversionRateService = service;
     }
 
-    public double convertValue(double valueToConvert, CurrencyCode baseCurrencyCode, CurrencyCode targetCurrencyCode) throws IOException, InterruptedException {
-        ConversionRateDto conversionRateDto = conversionRateService.getConversionRate(baseCurrencyCode.name(), targetCurrencyCode.name());
+    public double convertValue(double valueToConvert, Currency baseCurrency, Currency targetCurrency) throws IOException, InterruptedException {
+        ConversionRateDto conversionRateDto = conversionRateService.getConversionRate(baseCurrency.code, targetCurrency.code);
         double conversionResult = valueToConvert * conversionRateDto.conversionRate();
 
         writeConversion(new SavedConversionDto(
                 Instant.now().toString(),
-                baseCurrencyCode,
-                targetCurrencyCode,
+                baseCurrency.code,
+                targetCurrency.code,
                 valueToConvert,
                 conversionResult
         ));
