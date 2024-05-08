@@ -5,9 +5,11 @@ import models.CurrencyConverter;
 import presentation.ConsoleUi;
 import service.ConversionRateService;
 import utils.constants.Currency;
+import utils.constants.UiPrompts;
 
 import java.net.http.HttpClient;
 import java.util.Arrays;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -27,10 +29,10 @@ public class Main {
         final int exitOption = 10;
 
         while (option != exitOption){
-            consoleUi.displayMenu();
-            option = scanner.nextInt();
-
             try{
+                consoleUi.displayMenu();
+                option = scanner.nextInt();
+
                 switch (option){
                     case 1:
                         consoleUi.convertCurrency(Currency.UnitedStatesDollar, Currency.ArgentinePeso);
@@ -63,11 +65,16 @@ public class Main {
                         consoleUi.displayExitMessage();
                         break;
                     default:
-                        consoleUi.displayInvalidOptionMessage();
+                        consoleUi.displayInvalidInputMessage();
                         break;
                 }
+            } catch (InputMismatchException e){
+                consoleUi.displayInvalidInputMessage();
             } catch (Exception e){
                 System.out.println(Arrays.toString(e.getStackTrace()));
+                scanner.nextLine();
+                System.out.println(UiPrompts.CONTINUE_REQUEST);
+                scanner.nextLine();
             }
 
         }

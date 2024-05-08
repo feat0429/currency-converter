@@ -51,8 +51,8 @@ public class ConsoleUi {
         System.out.println(UiPrompts.EXIT_MESSAGE);
     }
 
-    public void displayInvalidOptionMessage(){
-        System.out.println(UiPrompts.INVALID_OPTION);
+    public void displayInvalidInputMessage(){
+        System.out.println(UiPrompts.INVALID_INPUT);
         scanner.nextLine();
         System.out.println(UiPrompts.CONTINUE_REQUEST);
         scanner.nextLine();    }

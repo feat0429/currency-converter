@@ -2,7 +2,7 @@ package utils.constants;
 
 public final class UiPrompts {
     public static final String INPUT_REQUEST = "Enter the value that you would like to convert:";
-    public static final String INVALID_OPTION = "Invalid option. Please enter a valid option displayed in the menu.";
+    public static final String INVALID_INPUT = "Invalid input. Please enter a valid value.";
     public static final String RESULT_MESSAGE = "The conversion result is: ";
     public static final String CONTINUE_REQUEST = "\nPress Enter key to continue.";
     public static final String EXIT_MESSAGE = "Thank you to use our service :]";
