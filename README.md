@@ -1,5 +1,5 @@
 # Currency Converter
-Currency converted created as part of the ONE - Oracle Next Education bootcamp provided by Alura Latam. The project was completed following the requirements provided by 
+Currency converter created as part of the ONE - Oracle Next Education bootcamp provided by Alura Latam. The project was completed following the requirements provided by 
 Alura to build an console applications that provides different conversion options and depending on the selected option it will convert specific quantities to the selected currency.
 The conversion rates for each currency were retrieved from [Exchange Rate API](https://www.exchangerate-api.com/ "Exchange Rate API").
 
